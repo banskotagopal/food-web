@@ -1,0 +1,46 @@
+ 
+/* -----------------------------responsive for header-------------------------- */
+
+@media screen and (max-width:900px)
+{
+
+    .home-page header .bag #slider{
+        display: block;
+    }
+ 
+    .home-page header .bag p{
+         font-size: 12px
+    }
+    .home-page header .bag i{
+        font-size: 14px;
+    }
+
+    .home-page header ul{
+        display: none;
+        position: absolute;
+        top: 75px;
+        right: 200px;
+         width: 150px;
+         height: 410px;
+         right: 20px;
+         border-radius: 1rem;
+         text-align: center;
+         background-color: #fff;
+         box-shadow: rgb(66, 63, 63) 8px 6px 10px,rgb(107, 103, 103) 8px 8px 10px inset;
+    }
+     
+    .home-page header h1{
+        font-size: 1.7rem;
+    }
+
+}
+
+@media(max-width:600px)
+{
+    .font-page .content h1{
+        font-size: 2rem;
+    }
+     .icon{
+       margin-bottom: 20px;
+     }
+}

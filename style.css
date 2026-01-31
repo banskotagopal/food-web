@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto Condensed", sans-serif;
+    /* border: 1px solid red; */
 }
 
 :root{
@@ -34,6 +35,7 @@ body.black{
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    height: 14vh;
 }
 
 .home-page header h1{
@@ -51,6 +53,7 @@ body.black{
 .home-page header ul li{
     list-style: none;
     padding: 20px;
+   
 }
 
 .home-page header ul li a{
@@ -142,38 +145,71 @@ header h1 i{
  }
 
  
-/* -----------------------------responsive for header-------------------------- */
+.font-page{
+    min-height: calc(100vh - 14vh);
+    display: flex;
+    justify-content: center;
 
-@media screen and (max-width:900px)
-{
-
-    .home-page header .bag #slider{
-        display: block;
-    }
+}
  
-    .home-page header .bag p{
-         font-size: 12px
-    }
-    .home-page header .bag i{
-        font-size: 14px;
-    }
-
-    .home-page header ul{
-        display: none;
-        position: absolute;
-        top: 75px;
-        right: 200px;
-         width: 150px;
-         height: 410px;
-         right: 20px;
-         border-radius: 1rem;
-         text-align: center;
-         background-color: #fff;
-         box-shadow: rgb(66, 63, 63) 8px 6px 10px,rgb(107, 103, 103) 8px 8px 10px inset;
-    }
+.btn{
+    text-decoration: none;
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 8px;
+    color: brown;
      
-    .home-page header h1{
-        font-size: 1.7rem;
-    }
+}
+ 
+.btn:hover{
+    background-color: green;
+    color: white;
+}
 
+img{
+    display: block;
+    margin: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.image-continer{
+    flex-wrap: wrap;
+    flex-basis: 800px;
+}
+
+.content{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content h1{
+    font-size: 3.2rem;
+    color: rebeccapurple;
+}
+
+.content h1 span{
+    color: goldenrod;
+}
+
+.content p{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.social:hover{
+    box-shadow: 2px 2px 5px orange, -2px -2px 5px orange inset;
+    opacity: 0.9;
+}
+ 
+.icon{
+    padding: 5px;
+}
+.social{
+    box-shadow: 2px 3px 5px rgb(184, 148, 81);
+    padding: 5px;
+    border-radius: 1rem;
+    background-color: lightblue;
+     
 }
