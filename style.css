@@ -175,7 +175,7 @@ img{
 
 .image-continer{
     flex-wrap: wrap;
-    flex-basis: 800px;
+    flex-basis: 1000px;
 }
 
 .content{
