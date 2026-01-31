@@ -152,7 +152,7 @@ header h1 i{
  
 .btn{
     text-decoration: none;
-    border: 2px solid green;
+    border: 1px solid green;
     padding: 5px;
     border-radius: 8px;
     color: brown;
@@ -164,7 +164,7 @@ header h1 i{
     color: white;
 }
 
-img{
+.font-page .image-continer img{
     display: block;
     margin: auto;
     height: auto;
@@ -205,7 +205,7 @@ img{
 }
 
 .second-section .service h3{
-    color: rgb(216, 160, 18);
+    color: goldenrod;
     padding: 4px;
 }
 
@@ -214,7 +214,7 @@ img{
 }
 
 .second-section .service-card .card h4{
-    color: goldenrod;
+    color: rgb(0, 119, 255);
     text-transform: uppercase;
     margin: 10px 0;
 }
@@ -234,4 +234,77 @@ img{
 
 .second-section .service .card{
     margin: 0 10px;
+}
+
+
+
+/* -------------------------------------third section--------------------------------------------------------- */
+
+.menu{
+    padding-top: 8rem;
+}
+
+.menu .menu-head{
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.menu .menu-head h3{
+    color:  goldenrod;
+    padding:  8px 0;
+}
+
+.menu .menu-head h1{
+    color: brown;
+    font-size: 1.5rem;
+}
+
+
+.item-image img{
+    width: 10rem;
+    filter: drop-shadow(rgb(32, 30, 30) 0 20px 20px);
+}
+
+.menu-list{
+    text-align: center;
+    padding-bottom: 5rem;
+    padding: 10px;
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 60px;
+   padding-left: 8px;
+   padding-bottom: 10rem;
+}
+
+.item{
+    background-color:  rgb(163, 184, 202);
+   margin-bottom: 20px;
+   border-radius: 1rem;
+     box-shadow: rgb(49, 51, 211) 2px 5px 10px,rgb(49, 51, 211) 2px 5px 10px inset;
+     height: 100%;
+     transition: 0.5s;
+}
+
+.item:hover{
+    transform: translateY(-5px);
+}
+ 
+/* --------------------------------------------------section four--------------------------------- */
+
+.fourth-section{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+.fourth-section .image-review img{
+    display: block;
+    margin: auto;
+    display: fl;
+    justify-content: left;
+    padding: auto;
+    filter: drop-shadow(#000 0 30px 30px);
+    max-width: 50%;
+     
 }
