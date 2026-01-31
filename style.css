@@ -198,18 +198,4 @@ img{
     font-weight: 600;
 }
 
-.social:hover{
-    box-shadow: 2px 2px 5px orange, -2px -2px 5px orange inset;
-    opacity: 0.9;
-}
  
-.icon{
-    padding: 5px;
-}
-.social{
-    box-shadow: 2px 3px 5px rgb(184, 148, 81);
-    padding: 5px;
-    border-radius: 1rem;
-    background-color: lightblue;
-     
-}

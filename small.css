@@ -35,12 +35,25 @@
 
 }
 
-@media(max-width:600px)
-{
-    .font-page .content h1{
-        font-size: 2rem;
+@media (max-width:600px) {
+    .font-page{
+        flex-direction: column;
+        text-align: center;
     }
-     .icon{
-       margin-bottom: 20px;
-     }
+
+    .font-page .content h1{
+        font-size: 1.5rem;
+        padding-left: 0;
+    }
+
+    .font-page .content p{
+        font-size: 15px;
+        padding-left: 0;
+    }
+
+    .image-continer img{
+        width: 100%;
+        max-width: 300px;
+        padding-top: 30px;
+    }
 }
