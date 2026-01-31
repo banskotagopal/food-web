@@ -33,6 +33,7 @@
         font-size: 1.7rem;
     }
 
+
 }
 
 @media (max-width:600px) {
@@ -56,4 +57,14 @@
         max-width: 300px;
         padding-top: 30px;
     }
+       .second-section .service-card{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .second-section .service-card .card{
+        padding-bottom: 50px;
+    }
 }
+
+
+ 
