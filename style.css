@@ -144,6 +144,10 @@ header h1 i {
     display: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* ------------------------------------------------------------------first section-------------------------------------- */
 .font-page {
     display: flex;
@@ -351,7 +355,7 @@ header h1 i {
 }
 
 .next {
-    padding: 20px 5px;
+    padding: 20px 15px;
     font-size: 2rem;
     color: orangered;
     display: flex;
