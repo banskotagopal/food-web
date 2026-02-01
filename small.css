@@ -64,6 +64,22 @@
     .second-section .service-card .card{
         padding-bottom: 50px;
     }
+
+    .fourth-section{
+        flex-direction: column;
+       text-align: center;
+    }
+    .image-review{
+        padding-bottom: 100px;
+        padding-left: 30%;
+    }
+
+    .fourth-two{
+        text-align: center;
+    }
+    .image-reivew{
+         margin-left: 40%;
+    } 
 }
 
 

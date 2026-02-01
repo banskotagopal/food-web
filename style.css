@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,63 +8,63 @@
     /* border: 1px solid red; */
 }
 
-:root{
-    --gold : rgb(245, 166, 19);
+:root {
+    --gold: rgb(245, 166, 19);
 }
 
-body{
+body {
     background-color: rgba(238, 231, 231, 0.979);
     transition: background-color 0.3s ease-in;
 }
 
-.btn-white{
+.btn-white {
     color: white;
 }
 
 
 /* ----------------------------change color--------------- */
 
-body.black{
+body.black {
     background-color: #000000ee;
     color: white;
 }
 
- /* --------------------------------------header---------------------------------------- */
+/* --------------------------------------header---------------------------------------- */
 
-.home-page header{
+.home-page header {
     display: flex;
     justify-content: space-between;
     padding: 15px;
     height: 14vh;
 }
 
-.home-page header h1{
+.home-page header h1 {
     color: var(--gold);
     font-size: 2.5rem;
-     display: flex;
-     gap: 10px;
-     align-items: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
-.home-page header ul{
+.home-page header ul {
     display: flex;
 }
 
-.home-page header ul li{
+.home-page header ul li {
     list-style: none;
     padding: 20px;
-   
+
 }
 
-.home-page header ul li a{
+.home-page header ul li a {
     text-decoration: none;
     font-size: 1.3rem;
-    color: olivedrab    ;
+    color: olivedrab;
     font-weight: 1000;
     position: relative;
 }
 
-.home-page header ul li a::after{
+.home-page header ul li a::after {
     content: '';
     width: 0%;
     background: green;
@@ -75,17 +75,17 @@ body.black{
     transition: 0.5s;
 }
 
-.home-page header ul li a:hover::after{
+.home-page header ul li a:hover::after {
     width: 100%;
     cursor: pointer;
 }
 
-.home-page header ul li a:hover{
+.home-page header ul li a:hover {
     color: brown;
 }
 
 
-header h1 i{
+header h1 i {
     font-size: 50px;
     color: black;
     cursor: pointer;
@@ -99,132 +99,132 @@ header h1 i{
     font-size: 1rem;
     padding-right: 30px;
 }
- 
 
-.home-page .bag p{
-     background-color: rgba(221, 19, 19, 0.904);
+
+.home-page .bag p {
+    background-color: rgba(221, 19, 19, 0.904);
     padding: 10px;
     border-radius: 8px;
     transition: 0.3s all;
 }
 
- .home-page .bag p span{
-       color: #fff;
-       font-weight: 500;
-       margin-right: 5px;
- }
+.home-page .bag p span {
+    color: #fff;
+    font-weight: 500;
+    margin-right: 5px;
+}
 
- .home-page .bag p:hover{
-     background-color: blue;
- }
+.home-page .bag p:hover {
+    background-color: blue;
+}
 
-.home-page header .bag i{
+.home-page header .bag i {
     position: relative;
     font-size: 1.3rem;
 }
 
- .home-page header .bag i .bag-value{
-     position: absolute;
-     font-size: 0.76rem;
-     font-weight: 350;
-     height: 13px;
-     text-align: center;
-     border-radius: 40%;
-     line-height: 13px;
-     color: black;
-     background-color: rgba(14, 233, 14, 0.473);
-     width: 12px;
- }
+.home-page header .bag i .bag-value {
+    position: absolute;
+    font-size: 0.76rem;
+    font-weight: 350;
+    height: 13px;
+    text-align: center;
+    border-radius: 40%;
+    line-height: 13px;
+    color: black;
+    background-color: rgba(14, 233, 14, 0.473);
+    width: 12px;
+}
 
- .home-page header .bag #slider{
+.home-page header .bag #slider {
     display: none;
- }
-  
- .home-page header .bag #slid{
-    display: none;
- }
+}
 
- /* ------------------------------------------------------------------first section-------------------------------------- */
-.font-page{
+.home-page header .bag #slid {
+    display: none;
+}
+
+/* ------------------------------------------------------------------first section-------------------------------------- */
+.font-page {
     display: flex;
     justify-content: center;
 }
- 
-.btn{
+
+.btn {
     text-decoration: none;
     border: 1px solid green;
     padding: 5px;
     border-radius: 8px;
     color: brown;
-     
+
 }
- 
-.btn:hover{
+
+.btn:hover {
     background-color: green;
     color: white;
 }
 
-.font-page .image-continer img{
+.font-page .image-continer img {
     display: block;
     margin: auto;
     height: auto;
     max-width: 100%;
 }
 
-.content{
+.content {
     width: 100%;
     text-align: center;
     margin-top: 100px;
 }
 
-.content h1{
+.content h1 {
     font-size: 3.2rem;
     color: rebeccapurple;
 }
 
-.content h1 span{
+.content h1 span {
     color: goldenrod;
 }
 
-.content p{
+.content p {
     font-size: 1.1rem;
     font-weight: 600;
 }
 
-.font-page .content h2{
+.font-page .content h2 {
     color: brown;
     padding-bottom: 10px;
 }
 
 
-              /* ------------------------------------------------------second section-------------------------------------------------- */
+/* ------------------------------------------------------second section-------------------------------------------------- */
 
-.second-section .service{
+.second-section .service {
     text-align: center;
     padding-top: 10rem;
 }
 
-.second-section .service h3{
+.second-section .service h3 {
     color: goldenrod;
     padding: 4px;
 }
 
-.second-section .service h2{
+.second-section .service h2 {
     color: brown;
 }
 
-.second-section .service-card .card h4{
+.second-section .service-card .card h4 {
     color: rgb(0, 119, 255);
     text-transform: uppercase;
     margin: 10px 0;
 }
 
-.second-section .service-card .card p{
+.second-section .service-card .card p {
     color: green;
     font-size: 1rem;
 }
 
-.second-section .service-card{
+.second-section .service-card {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -232,7 +232,7 @@ header h1 i{
     padding: 4rem 20px;
 }
 
-.second-section .service .card{
+.second-section .service .card {
     margin: 0 10px;
 }
 
@@ -240,71 +240,121 @@ header h1 i{
 
 /* -------------------------------------third section--------------------------------------------------------- */
 
-.menu{
+.menu {
     padding-top: 8rem;
 }
 
-.menu .menu-head{
+.menu .menu-head {
     text-align: center;
     padding: 10px;
     padding-bottom: 50px;
 }
 
-.menu .menu-head h3{
-    color:  goldenrod;
-    padding:  8px 0;
+.menu .menu-head h3 {
+    color: goldenrod;
+    padding: 8px 0;
 }
 
-.menu .menu-head h1{
+.menu .menu-head h1 {
     color: brown;
     font-size: 1.5rem;
 }
 
 
-.item-image img{
+.item-image img {
     width: 10rem;
     filter: drop-shadow(rgb(32, 30, 30) 0 20px 20px);
 }
 
-.menu-list{
+.menu-list {
     text-align: center;
     padding-bottom: 5rem;
     padding: 10px;
     display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-   gap: 60px;
-   padding-left: 8px;
-   padding-bottom: 10rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 60px;
+    padding: 0 40px;
+    padding-bottom: 10rem;
 }
 
-.item{
-    background-color:  rgb(163, 184, 202);
-   margin-bottom: 20px;
-   border-radius: 1rem;
-     box-shadow: rgb(49, 51, 211) 2px 5px 10px,rgb(49, 51, 211) 2px 5px 10px inset;
-     height: 100%;
-     transition: 0.5s;
+.item {
+    background-color: rgb(163, 184, 202);
+    margin-bottom: 20px;
+    border-radius: 1rem;
+    box-shadow: rgb(49, 51, 211) 2px 5px 10px, rgb(49, 51, 211) 2px 5px 10px inset;
+    height: 100%;
+    transition: 0.5s;
 }
 
-.item:hover{
+.item:hover {
     transform: translateY(-5px);
 }
- 
+
 /* --------------------------------------------------section four--------------------------------- */
 
-.fourth-section{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+.fourth-section {
+    display: flex;
 
 }
-.fourth-section .image-review img{
+
+.fourth-section .image-review img {
     display: block;
     margin: auto;
-    display: fl;
-    justify-content: left;
     padding: auto;
     filter: drop-shadow(#000 0 30px 30px);
-    max-width: 50%;
-     
+    max-width: 60%;
+    margin-right: 50%;
+}
+
+.fourth-section .review {
+    width: 100%;
+}
+
+.fourth-section .review h5 {
+    padding: 5px 15px;
+    font-size: 1rem;
+    color: goldenrod;
+}
+
+.fourth-section .review h2 {
+    color: brown;
+    font-size: 2rem;
+}
+
+.image-reivew {
+    width: 5rem;
+    object-fit: cover;
+    height: 5rem;
+}
+
+.image-reivew img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review .content-review .about h4 {
+    color: brown;
+    padding: 10px 0px;
+}
+
+.review .content-review .about i {
+    color: yellow;
+    padding-bottom: 20px;
+}
+
+.review .content-review .about p {
+    color: green;
+    width: 90%;
+    font-size: 15px;
+}
+
+.next {
+    padding: 20px 5px;
+    font-size: 2rem;
+    color: orangered;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
 }

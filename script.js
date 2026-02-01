@@ -27,3 +27,39 @@ btn.addEventListener('click',() =>{
     show.style.display ="none";
     
  });
+
+
+
+//  ----------------------------------------------slide review-----------------------------------
+const reviews = document.querySelectorAll(
+  ".review-1, .review-2, .review-3"
+);
+
+let currentReview = 0;
+function showReview(index) {
+  reviews.forEach(r => r.style.display = "none");
+  reviews[index].style.display = "block";
+}
+
+
+document.querySelector(".review").addEventListener("click", (e) => {
+
+  if (e.target.classList.contains("fa-arrow-right")) {
+    currentReview++;
+    if (currentReview >= reviews.length) {
+      currentReview = 0;
+      
+    }
+    showReview(currentReview);
+  }
+
+  if (e.target.classList.contains("fa-arrow-left")) {
+    currentReview--;
+    if (currentReview < 0) {
+      currentReview = reviews.length - 1;
+    }
+    showReview(currentReview);
+  }
+});
+
+showReview(currentReview);
