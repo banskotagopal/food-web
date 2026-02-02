@@ -54,16 +54,19 @@ createFormEl.addEventListener("submit", (e) => {
         alert("Passwords do not match!");
         return;
     }
-
-    localStorage.setItem("eml", create_email.value);
+       if(password.value.length > 5)
+       {
+              localStorage.setItem("eml", create_email.value);
     localStorage.setItem("passs", password.value);
 
     alert("Account created successfully!");
-
     createform.style.display = "none";
     loginform.style.display = "block";
     login_btn.style.display = "none";
     localStorage.setItem("accountCreated", "true");
+       } else{
+        alert("password must more than 5");
+       }
 });
 
 
