@@ -82,7 +82,15 @@
     } 
     .fourth-section .image-review img{
         width: 80%;
-        padding-right: 40px;
+        padding-right: 60px;
+    }
+
+    .fifth{
+        flex-direction: column;
+    }
+
+    .fifth .fifth-img img{
+        width: 13rem;
     }
 }
 

@@ -103,9 +103,10 @@ header h1 i {
 
 .home-page .bag p {
     background-color: rgba(221, 19, 19, 0.904);
-    padding: 10px;
     border-radius: 8px;
+    padding: 7px;
     transition: 0.3s all;
+    font-size: 1.5rem;
 }
 
 .home-page .bag p span {
@@ -300,13 +301,12 @@ a{
     display: flex;
 }
 
-.fourth-section .image-review img {
+.fourth-section   img {
     display: block;
     margin: auto;
     padding: auto;
     filter: drop-shadow(#000 0 30px 30px);
-    width: 60%;
-    margin-right: 50%;
+    width: 100%;
 }
 
 
@@ -317,6 +317,7 @@ a{
 .fourth-section .review {
     width: 100%;
 }
+
 
 .fourth-section .review h5 {
     padding: 5px 15px;
@@ -329,17 +330,15 @@ a{
     font-size: 2rem;
 }
 
-.image-reivew {
+.content-review .image-reivew  .man{
     width: 5rem;
-    object-fit: cover;
-    height: 5rem;
+    margin-right: 100%;
 }
 
-.image-reivew img {
-    width: 100%;
-    height: 100%;
+.fourth-section img {
+    width: 70%;
+    height: 70%;
     object-fit: cover;
-    border-radius: 50%;
 }
 
 .review .content-review .about h4 {
@@ -355,19 +354,170 @@ a{
 .review .content-review .about p {
     color: green;
     width: 85%;
-    padding-left: 20px;
+    flex-wrap: wrap;
+    padding-left: 2px;
     font-size: 15px;
+    letter-spacing: 1px;
 }
 
 .next {
-    padding: 20px 35px;
+    padding: 20px 20px;
     font-size: 2rem;
-    color: orangered;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
 }
 
+.next i{
+    background-color: brown;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
 #log-out{
     display: none;
+}
+
+
+
+/* --------------------------------------------------------fifth section------------------------------------------------------- */
+
+.fiftn-continer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10rem;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10rem;
+}
+
+.fifth{
+      width: 80%;
+      border-radius: 1rem;
+      padding: 10px;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      height: auto;
+    padding: 50px;
+    background-color:  rgb(218, 193, 147);
+}
+
+
+
+.fifth .fifth-img img{
+         width: 20rem;
+}
+
+.fifth .fifth-about h4{
+      padding: 10px;
+      color: gold;
+      font-size: 1.1rem;
+      gap: 20px;
+      letter-spacing: 2px;
+}
+
+.fifth .fifth-about h1{
+    color: brown;
+    padding: 4px;
+    letter-spacing: 1.2px;
+}
+
+.fifth .fifth-about p{
+    padding-top: 15px;   
+    color: rgb(62, 151, 228);
+    font-weight: 1000;
+}
+
+.fifth .fifth-about .get{
+    margin-top: 2rem;
+    width: 50%;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid aquamarine;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 5px;
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.fifth .fifth-about .get:hover{
+    background-color: aquamarine;
+}
+
+
+
+ /* -- --------------------------------------------------------sixth section---------------------------------------------  */
+
+
+.sixth{
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.sixth .sixth-section h3{
+     padding: 5px;
+     color: var(--gold);
+     letter-spacing: 2px;
+}
+
+.sixth .sixth-section h1{
+    color: brown;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 1000;
+    font-size: 2.5rem;
+}
+
+.sixth .sixth-section p{
+    color: rgb(39, 179, 63);
+    padding: 15px;
+    font-weight: 500;
+}
+
+.sixth .sixth-section form{
+    display: flex;
+     margin-top: 5rem;
+     padding: 10px;
+     margin-bottom: 5rem;
+    background-color: rgb(194, 208, 212);
+    width: 350px;
+    border-radius: 8px;
+}
+
+.sixth .sixth-section .form{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.sixth .sixth-section form{
+           box-shadow: 2px 3px 8px rgb(119, 96, 96),2px 3px 8px rgb(119, 96, 96) inset;
+}
+
+.sixth .sixth-section form input{
+    background-color: transparent;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: brown;
+}
+
+.sixth .sixth-section .form button{
+    padding: 7px;
+    background-color: transparent;
+    border:  1px solid orange;
+    border-radius: 8px;
+    box-shadow: 2px 3px 7px rgb(160, 107, 107),2px 3px 7px rgb(160, 107, 107) inset;
+}
+
+.sixth .sixth-section .form button:hover{
+    background-color: orange;
+    color: white;
 }
