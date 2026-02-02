@@ -63,3 +63,35 @@ document.querySelector(".review").addEventListener("click", (e) => {
 });
 
 showReview(currentReview);
+
+let sign_in = document.getElementById("sign-in");
+let log_out = document.getElementById("log-out");
+
+ if(localStorage.getItem("login"))
+ {
+    sign_in.style.display = "none";
+    log_out.style.display = "block";
+ }
+
+
+
+log_out.addEventListener('click',() =>{
+let input = prompt("If you logout, account will be deleted permantely 'y' for deleted")
+ 
+if(input.toLocaleLowerCase() === "y")
+{ 
+    localStorage.removeItem("login");
+    log_out.style.display = "none";
+    sign_in.style.display = "inline";
+    localStorage.removeItem("eml");
+    localStorage.removeItem("passs");
+    localStorage.removeItem("accountCreated");
+    alert("Account delet Sucessfully");
+}else if(input.valueOf === "n")
+{
+  alert("account delection cancled");
+}else{
+  alert("Invalid Operation");
+}
+
+});
