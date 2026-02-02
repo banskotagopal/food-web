@@ -86,7 +86,7 @@ if(input.toLocaleLowerCase() === "y")
     localStorage.removeItem("eml");
     localStorage.removeItem("passs");
     localStorage.removeItem("accountCreated");
-    alert("Account delet Sucessfully");
+    alert("Account deleted Sucessfully");
 }else if(input.valueOf === "n")
 {
   alert("account delection cancled");

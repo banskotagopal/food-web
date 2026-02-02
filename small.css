@@ -80,6 +80,10 @@
     .image-reivew{
          margin-left: 40%;
     } 
+    .fourth-section .image-review img{
+        width: 80%;
+        padding-right: 40px;
+    }
 }
 
 
