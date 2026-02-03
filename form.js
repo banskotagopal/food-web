@@ -1,15 +1,4 @@
-
-let page = document.getElementById("main");
-
-page.addEventListener("mouseenter", () => {
-    page.style.backgroundColor = "rgb(13, 31, 48)";
-    page.style.border = "none";
-});
-
-page.addEventListener("mouseleave", () => {
-    page.style.backgroundColor = "";
-    page.style.border = "1px solid aliceblue";
-});
+ 
 
 
 let loginform = document.getElementById("login");

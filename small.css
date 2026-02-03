@@ -12,7 +12,7 @@
          font-size: 12px
     }
     .home-page header .bag i{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .home-page header ul{
@@ -21,12 +21,12 @@
         top: 75px;
         right: 200px;
          width: 150px;
-         height: 410px;
+         height: 450px;
          right: 20px;
          border-radius: 1rem;
          text-align: center;
          background-color: #fff;
-         box-shadow: rgb(66, 63, 63) 8px 6px 10px,rgb(107, 103, 103) 8px 8px 10px inset;
+         box-shadow: rgb(102, 97, 97) 5px 10px 7px,rgb(102, 97, 97) 3px 4px 7px inset;
     }
      
     .home-page header h1{
@@ -70,8 +70,7 @@
        text-align: center;
     }
     .image-review{
-        padding-bottom: 100px;
-        padding-left: 30%;
+        padding-bottom: 40px;
     }
 
     .fourth-two{
@@ -79,18 +78,13 @@
     }
     .image-reivew{
          margin-left: 40%;
-    } 
-    .fourth-section .image-review img{
-        width: 80%;
-        padding-right: 60px;
     }
-
     .fifth{
         flex-direction: column;
     }
 
     .fifth .fifth-img img{
-        width: 13rem;
+        width: 7rem;
     }
 }
 

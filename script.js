@@ -14,18 +14,30 @@ btn.addEventListener('click',() =>{
  let slider = document.querySelector("#slider");
  let show = document.querySelector("#show");
  let slid =document.querySelector("#slid");
+ let bar = document.querySelectorAll("#show a")
+
+function close()
+{
+  bar.forEach(item =>{
+      item.addEventListener("click",() =>{
+         show.style.display = "none";
+         slid.style.display = "none";
+         slider.style.display ="inline";
+  });
+  })
+}
 
  slider.addEventListener('click',() =>{
     show.style.display = "inline";
     slider.style.display = "none";
     slid.style.display = "inline";
+    close();
  });
 
  slid.addEventListener("click",() =>{
     slid.style.display = "none";
     slider.style.display = "inline";
     show.style.display ="none";
-    
  });
 
 
@@ -95,3 +107,5 @@ if(input.toLocaleLowerCase() === "y")
 }
 
 });
+
+
