@@ -301,6 +301,113 @@ a{
     transform: translateY(-5px);
 }
 
+
+/* -----------------------------------------card item----------------------------------------- */
+
+
+.list-tab{
+    background-color:  lightblue;
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0;
+    overflow: auto;
+    box-shadow: -5px -5px 30px rgb(9, 9, 201);
+}
+
+.list-card{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    padding-bottom: 2rem;
+    background-color: aliceblue;
+    margin: 4px 5px;
+    border-radius: 1rem;
+}
+.list-tab h3{
+    font-size: 1.8rem;
+}
+
+.list-card .list-img{
+     padding-left: 25px;
+}
+
+.list-card .list-img img{
+    width: 8rem;
+}
+
+.list-card .list-about h4{
+    color: black;
+    text-align: center;
+    font-weight: 1000;
+    
+}
+
+.list-card .list-about{
+    padding: 30px 20px;
+}
+
+ .list-card .action{
+      display: flex;
+       padding-left: 45px;
+       padding-top: 40px;
+       gap: 20px;
+ }
+
+ .list-card .action i{
+      background-color: red;
+      width: 25px;
+      text-align: center;
+      height: 25px;
+      cursor: pointer;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      display: flex ;
+ }
+.list-card .action h4{
+    font-size: 1.4rem;
+    color: darkred;
+}
+.list-tab h2{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 0;
+    margin-top: 1rem;
+    font-size: 1rem;
+    word-spacing: 1.5px;
+    font-weight: 1000;
+}
+
+.list-tab .other-item .card-btn .card{
+      margin: 5px 20px;
+     padding: 7px;
+      width: 100px;
+      border: 1px solid blueviolet;
+      background-color: transparent;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: 0.5s all;
+}
+
+.list-tab .other-item .card-btn{
+    padding-top: 1rem;
+}
+
+.list-tab .other-item .card-btn .card:hover{
+           background-color: blueviolet;
+           color: aliceblue;
+}
+
+
+.list-tab{
+    display: none;
+}
+
 /* --------------------------------------------------section four--------------------------------- */
 
 .fourth-section {
