@@ -1,60 +1,60 @@
-body{
-     align-items: center;
-     justify-content: center;
-     display: flex;
-     margin-top: 12rem;
-     color: white;
-     
+body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 12rem;
+  color: white;
+
 }
 
-.login{
-    width: 500px;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 5px;
-    border-radius: 1rem;
-    border: 1px solid aliceblue;
-    background-color: rgb(10, 7, 7);
+.login {
+  width: 500px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+  border-radius: 1rem;
+  border: 1px solid aliceblue;
+  background-color: rgb(10, 7, 7);
 }
 
- .input{
-    width: 100%;
-    outline: none;
-    margin-bottom: 20px;
-    font-size: 15px;
-    background-color: transparent;
-    border-radius: 8px;
-    background:   linear-gradient(black, black) padding-box,linear-gradient(to right,blue,rgb(218, 148, 20),red)border-box;
-    border: 2px solid transparent;
-    color: white;
-    font-size: 15px;
-    padding: 9px;
- }
+.input {
+  width: 100%;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 15px;
+  background-color: transparent;
+  border-radius: 8px;
+  background: linear-gradient(black, black) padding-box, linear-gradient(to right, blue, rgb(218, 148, 20), red)border-box;
+  border: 2px solid transparent;
+  color: white;
+  font-size: 15px;
+  padding: 9px;
+}
 
- 
 
- .login  button{
-   margin-left: 10%;
-   width: 90%;
-   padding: 5px;
-   letter-spacing: 1px;
-   border: 2px solid blueviolet;
-   background-color: transparent;
-   color: white;
-   font-weight: 1000;
-   outline: none;
-   border-radius: 8px;
-   cursor: pointer;
-   margin-top: 1rem;
- }
- 
- .login button:hover{
+
+.login button {
+  margin-left: 10%;
+  width: 90%;
+  padding: 5px;
+  letter-spacing: 1px;
+  border: 2px solid blueviolet;
+  background-color: transparent;
+  color: white;
+  font-weight: 1000;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.login button:hover {
   background-color: blueviolet;
- }
+}
 
-.login h5{
+.login h5 {
   color: brown;
   font-size: 1rem;
   text-align: center;
@@ -63,7 +63,7 @@ body{
   letter-spacing: 1.5px;
 }
 
-.login h5::after{
+.login h5::after {
   content: '';
   position: absolute;
   background-color: blue;
@@ -74,11 +74,11 @@ body{
   width: 90%;
 }
 
-.login{
+.login {
   flex-direction: column;
 }
 
-.login a{
+.login a {
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -90,21 +90,21 @@ body{
   font-weight: 500;
 }
 
-.login a h3{
-   border: 1px solid aliceblue;
-   padding: 4px;
-   width: 70%;
-   text-align: center;
-   border-radius: 8px;
-   transition: 0.5s;
-   font-weight: 500;
+.login a h3 {
+  border: 1px solid aliceblue;
+  padding: 4px;
+  width: 70%;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-weight: 500;
 }
 
-.login a h3:hover{
-     background-color: aliceblue;
-     color: black;
+.login a h3:hover {
+  background-color: aliceblue;
+  color: black;
 }
 
- .create-form{
+.create-form {
   display: none;
- }
+}

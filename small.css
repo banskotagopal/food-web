@@ -1,92 +1,97 @@
- 
-/* -----------------------------responsive for header-------------------------- */
+ /* -----------------------------responsive for header-------------------------- */
 
-@media screen and (max-width:900px)
-{
+ @media screen and (max-width:900px) {
 
-    .home-page header .bag #slider{
-        display: block;
-    }
- 
-    .home-page header .bag p{
+     .home-page header .bag #slider {
+         display: block;
+     }
+
+     .home-page header .bag p {
          font-size: 12px
-    }
-    .home-page header .bag i{
-        font-size: 16px;
-    }
+     }
 
-    .home-page header ul{
-        display: none;
-        position: absolute;
-        top: 75px;
-        right: 200px;
+     .home-page header .bag i {
+         font-size: 16px;
+     }
+
+     .home-page header ul {
+         display: none;
+         position: absolute;
+         top: 75px;
+         right: 200px;
          width: 150px;
          height: 450px;
          right: 20px;
          border-radius: 1rem;
          text-align: center;
          background-color: #fff;
-         box-shadow: rgb(102, 97, 97) 5px 10px 7px,rgb(102, 97, 97) 3px 4px 7px inset;
-    }
-     
-    .home-page header h1{
-        font-size: 1.7rem;
-    }
+         box-shadow: rgb(102, 97, 97) 5px 10px 7px, rgb(102, 97, 97) 3px 4px 7px inset;
+     }
+
+     .home-page header h1 {
+         font-size: 1.7rem;
+     }
 
 
-}
+ }
 
-@media (max-width:600px) {
-    .font-page{
-        flex-direction: column;
-        text-align: center;
-    }
+ @media (max-width:600px) {
+     .font-page {
+         flex-direction: column;
+         text-align: center;
+     }
 
-    .font-page .content h1{
-        font-size: 1.5rem;
-        padding-left: 0;
-    }
+     .font-page .content h1 {
+         font-size: 1.5rem;
+         padding-left: 0;
+     }
 
-    .font-page .content p{
-        font-size: 15px;
-        padding-left: 0;
-    }
+     .font-page .content p {
+         font-size: 15px;
+         padding-left: 0;
+     }
 
-    .image-continer img{
-        width: 100%;
-        max-width: 300px;
-        padding-top: 30px;
-    }
-       .second-section .service-card{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .second-section .service-card .card{
-        padding-bottom: 50px;
-    }
+     .image-continer img {
+         width: 100%;
+         max-width: 300px;
+         padding-top: 30px;
+     }
 
-    .fourth-section{
-        flex-direction: column;
-       text-align: center;
-    }
-    .image-review{
-        padding-bottom: 40px;
-    }
+     .second-section .service-card {
+         flex-wrap: wrap;
+         flex-direction: column;
+     }
 
-    .fourth-two{
-        text-align: center;
-    }
-    .image-reivew{
+     .second-section .service-card .card {
+         padding-bottom: 50px;
+     }
+
+     .fourth-section {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     .image-review {
+         padding-bottom: 40px;
+     }
+
+     .fourth-two {
+         text-align: center;
+     }
+
+     .image-reivew {
          margin-left: 40%;
-    }
-    .fifth{
-        flex-direction: column;
-    }
+     }
 
-    .fifth .fifth-img img{
-        width: 7rem;
-    }
-}
+     .fifth {
+         flex-direction: column;
+     }
 
+     .fifth .fifth-img img {
+         width: 7rem;
+     }
 
- 
+     .list-tab{
+        padding-left: 5rem;
+     }
+ }

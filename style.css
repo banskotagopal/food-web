@@ -86,7 +86,7 @@ body.black {
 
 
 header h1 i {
-    font-size:  48px;
+    font-size: 48px;
     color: black;
     cursor: pointer;
 }
@@ -121,6 +121,7 @@ header h1 i {
     background-color: blue;
     color: white;
 }
+
 .home-page header .bag i {
     position: relative;
 }
@@ -146,7 +147,7 @@ header h1 i {
     display: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -268,13 +269,13 @@ a{
     font-size: 1.5rem;
 }
 
-.btn{
+.btn {
     cursor: pointer;
 }
 
 .item-image img {
     width: 10rem;
-    filter: drop-shadow(rgb(70, 65, 65)  4px 5px);
+    filter: drop-shadow(rgb(70, 65, 65) 4px 5px);
 }
 
 .menu-list {
@@ -304,105 +305,114 @@ a{
 
 /* -----------------------------------------card item----------------------------------------- */
 
-
-.list-tab{
-    background-color:  lightblue;
-    position: fixed;
+.list-tab {
+    background-color: lightblue;
     inset: 0 0 0 auto;
-    width: 25rem;
+    position: fixed;
+    width: 27rem;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 2rem 0;
-    overflow: auto;
-    box-shadow: -5px -5px 30px rgb(9, 9, 201);
 }
 
-.list-card{
+
+
+.list {
     flex: 1;
+    overflow: auto;
     width: 100%;
+}
+
+.list-card {
     display: flex;
-    padding-bottom: 2rem;
-    background-color: aliceblue;
-    margin: 4px 5px;
-    border-radius: 1rem;
-}
-.list-tab h3{
-    font-size: 1.8rem;
-}
-
-.list-card .list-img{
-     padding-left: 25px;
-}
-
-.list-card .list-img img{
-    width: 8rem;
-}
-
-.list-card .list-about h4{
-    color: black;
-    text-align: center;
-    font-weight: 1000;
     
 }
 
-.list-card .list-about{
-    padding: 30px 20px;
+.list-card .list-about {
+    padding-top: 1.5rem;
+    color: rgb(133, 22, 118);
 }
 
- .list-card .action{
-      display: flex;
-       padding-left: 45px;
-       padding-top: 40px;
-       gap: 20px;
- }
 
- .list-card .action i{
-      background-color: red;
-      width: 25px;
-      text-align: center;
-      height: 25px;
-      cursor: pointer;
-      border-radius: 50%;
-      align-items: center;
-      justify-content: center;
-      display: flex ;
- }
-.list-card .action h4{
-    font-size: 1.4rem;
-    color: darkred;
+.list-card .action {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    padding-left: 40px;
 }
-.list-tab h2{
-    background-color: black;
+
+.list-card .other-item {
+    padding: 10px;
+}
+
+.other-item h2 {
+    background-color: rgb(153, 110, 31);
     color: aliceblue;
-    padding: 10px 0;
-    margin-top: 1rem;
-    font-size: 1rem;
-    word-spacing: 1.5px;
+    font-weight: 1000;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.other-item .card-btn {
+    padding: 14px;
+    margin: 0 -100px;
+
+}
+
+.other-item .card-btn button {
+    padding: 7px;
+    border: 1px solid blue;
+    background-color: transparent;
+    border-radius: 9px;
+    width: 30%;
+    cursor: pointer;
+    transition: 0.5s all;
+    font-size: 900;
+}
+
+.list-about h4 span {
+    color: white;
+}
+
+.list-about h4 {
+    font-size: 14px;
+}
+
+.other-item .card-btn button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.list-card .action i {
+    margin: 28px 10px;
+    background-color: rgb(160, 39, 39);
+    width: 30px;
+    height: 30px;
+    padding-top: 0.4rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.list-card .action h4 {
+    padding-top: 1.8rem;
+    font-size: 23px;
+}
+
+.list-tab h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.list-card .list-about h4 {
+    letter-spacing: 1px;
     font-weight: 1000;
 }
 
-.list-tab .other-item .card-btn .card{
-      margin: 5px 20px;
-     padding: 7px;
-      width: 100px;
-      border: 1px solid blueviolet;
-      background-color: transparent;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 700;
-      transition: 0.5s all;
+.list-tab .list-img img {
+    width: 6rem;
 }
-
-.list-tab .other-item .card-btn{
-    padding-top: 1rem;
-}
-
-.list-tab .other-item .card-btn .card:hover{
-           background-color: blueviolet;
-           color: aliceblue;
-}
-
 
 .list-tab{
     display: none;
@@ -414,7 +424,7 @@ a{
     display: flex;
 }
 
-.fourth-one   img {
+.fourth-one img {
     display: block;
     margin: auto;
     padding: auto;
@@ -422,15 +432,15 @@ a{
     width: 100%;
 }
 
-.review{
-     min-height: 300px;
+.review {
+    min-height: 300px;
 }
 
 .fourth-section .review {
     width: 100%;
 }
- 
-.fourth-two{
+
+.fourth-two {
     padding-top: 3rem;
 }
 
@@ -444,7 +454,8 @@ a{
     color: brown;
     font-size: 2rem;
 }
-.man{
+
+.man {
     width: 5rem;
     margin-right: 140px;
 }
@@ -482,14 +493,14 @@ a{
     cursor: pointer;
 }
 
-.next i{
+.next i {
     background-color: brown;
     color: white;
     padding: 5px;
     border-radius: 50%;
 }
 
-#log-out{
+#log-out {
     display: none;
 }
 
@@ -497,7 +508,7 @@ a{
 
 /* --------------------------------------------------------fifth section------------------------------------------------------- */
 
-.fiftn-continer{
+.fiftn-continer {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -507,45 +518,45 @@ a{
     padding-bottom: 10rem;
 }
 
-.fifth{
-      width: 80%;
-      border-radius: 1rem;
-      padding: 10px;
-      text-align: center;
-      justify-content: center;
-      display: flex;
-      height: auto;
+.fifth {
+    width: 80%;
+    border-radius: 1rem;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: auto;
     padding: 50px;
-    background-color:  rgb(218, 193, 147);
+    background-color: rgb(218, 193, 147);
 }
 
 
 
-.fifth .fifth-img img{
-         width: 20rem;
+.fifth .fifth-img img {
+    width: 20rem;
 }
 
-.fifth .fifth-about h4{
-      padding: 10px;
-      color: gold;
-      font-size: 1.1rem;
-      gap: 20px;
-      letter-spacing: 2px;
+.fifth .fifth-about h4 {
+    padding: 10px;
+    color: gold;
+    font-size: 1.1rem;
+    gap: 20px;
+    letter-spacing: 2px;
 }
 
-.fifth .fifth-about h1{
+.fifth .fifth-about h1 {
     color: brown;
     padding: 4px;
     letter-spacing: 1.2px;
 }
 
-.fifth .fifth-about p{
-    padding-top: 15px;   
+.fifth .fifth-about p {
+    padding-top: 15px;
     color: rgb(62, 151, 228);
     font-weight: 1000;
 }
 
-.fifth .fifth-about .get{
+.fifth .fifth-about .get {
     margin-top: 2rem;
     width: 50%;
     border-radius: 8px;
@@ -560,27 +571,27 @@ a{
     cursor: pointer;
 }
 
-.fifth .fifth-about .get:hover{
+.fifth .fifth-about .get:hover {
     background-color: aquamarine;
 }
 
 
 
- /* -- --------------------------------------------------------sixth section---------------------------------------------  */
+/* -- --------------------------------------------------------sixth section---------------------------------------------  */
 
 
-.sixth{
+.sixth {
     padding-top: 3rem;
     text-align: center;
 }
 
-.sixth .sixth-section h3{
-     padding: 5px;
-     color: var(--gold);
-     letter-spacing: 2px;
+.sixth .sixth-section h3 {
+    padding: 5px;
+    color: var(--gold);
+    letter-spacing: 2px;
 }
 
-.sixth .sixth-section h1{
+.sixth .sixth-section h1 {
     color: brown;
     padding: 10px;
     letter-spacing: 1.5px;
@@ -588,33 +599,33 @@ a{
     font-size: 2.5rem;
 }
 
-.sixth .sixth-section p{
+.sixth .sixth-section p {
     color: rgb(39, 179, 63);
     padding: 15px;
     font-weight: 500;
 }
 
-.sixth .sixth-section form{
+.sixth .sixth-section form {
     display: flex;
-     margin-top: 5rem;
-     padding: 10px;
-     margin-bottom: 5rem;
+    margin-top: 5rem;
+    padding: 10px;
+    margin-bottom: 5rem;
     background-color: rgb(194, 208, 212);
     width: 350px;
     border-radius: 8px;
 }
 
-.sixth .sixth-section .form{
+.sixth .sixth-section .form {
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
-.sixth .sixth-section form{
-           box-shadow: 2px 3px 8px rgb(119, 96, 96),2px 3px 8px rgb(119, 96, 96) inset;
+.sixth .sixth-section form {
+    box-shadow: 2px 3px 8px rgb(119, 96, 96), 2px 3px 8px rgb(119, 96, 96) inset;
 }
 
-.sixth .sixth-section form input{
+.sixth .sixth-section form input {
     background-color: transparent;
     padding: 5px;
     width: 100%;
@@ -623,18 +634,18 @@ a{
     color: brown;
 }
 
-.sixth .sixth-section .form button{
+.sixth .sixth-section .form button {
     color: rgb(241, 249, 255);
     font-weight: 1000;
     padding: 7px;
     background-color: transparent;
-    border:  1px solid orange;
+    border: 1px solid orange;
     border-radius: 8px;
-    box-shadow: 2px 3px 7px rgb(160, 107, 107),2px 3px 7px rgb(160, 107, 107) inset;
+    box-shadow: 2px 3px 7px rgb(160, 107, 107), 2px 3px 7px rgb(160, 107, 107) inset;
     cursor: pointer;
 }
 
-.sixth .sixth-section .form button:hover{
+.sixth .sixth-section .form button:hover {
     background-color: orange;
-     
+
 }

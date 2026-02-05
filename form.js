@@ -1,4 +1,4 @@
- 
+
 
 
 let loginform = document.getElementById("login");
@@ -37,25 +37,24 @@ create_btn.addEventListener("click", (e) => {
 
 
 createFormEl.addEventListener("submit", (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
 
     if (password.value !== confirmPassword.value) {
         alert("Passwords do not match!");
         return;
     }
-       if(password.value.length > 5)
-       {
-              localStorage.setItem("eml", create_email.value);
-    localStorage.setItem("passs", password.value);
+    if (password.value.length > 5) {
+        localStorage.setItem("eml", create_email.value);
+        localStorage.setItem("passs", password.value);
 
-    alert("Account created successfully!");
-    createform.style.display = "none";
-    loginform.style.display = "block";
-    login_btn.style.display = "none";
-    localStorage.setItem("accountCreated", "true");
-       } else{
+        alert("Account created successfully!");
+        createform.style.display = "none";
+        loginform.style.display = "block";
+        login_btn.style.display = "none";
+        localStorage.setItem("accountCreated", "true");
+    } else {
         alert("password must more than 5");
-       }
+    }
 });
 
 
@@ -67,7 +66,7 @@ log.addEventListener("click", (e) => {
     if (email.value === storedEmail && login_pass.value === storedPass) {
         alert("Login successfully!");
         window.location.href = "index.html";
-        localStorage.setItem("login","sucess");
+        localStorage.setItem("login", "sucess");
     } else {
         alert("Incorrect Email or password");
     }
