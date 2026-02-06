@@ -172,6 +172,7 @@ function addToCart(product) {
 }
 
 // -------------------------------------show products-----------------------------
+let bag_val = 0;
 let products = [];
 
 function showcard() {
@@ -179,7 +180,7 @@ function showcard() {
   products.forEach(product => {
     const ordercard = document.createElement('div');
     ordercard.classList.add("item");
-
+     bag_val = bag_val +1;
     ordercard.innerHTML = `
       <div class="item-image">
         <img src="${product.image}">
@@ -189,9 +190,10 @@ function showcard() {
       <button class="btn add-to-cart">Add to Cart</button>
     `;
 
-    ordercard.querySelector(".add-to-cart")
-      .addEventListener("click", (e) => {
+    ordercard.querySelector(".add-to-cart").addEventListener("click", (e) => {
         e.preventDefault();
+               bag_val++;
+        document.querySelector(".bag-value").innerHTML = bag_val;
         alert(`Item ${product.name} successfully added to the bag`);
         addToCart(product);
       });
