@@ -339,7 +339,6 @@ a {
     display: flex;
     gap: 15px;
     position: relative;
-    padding-left: 40px;
 }
 
 .list-card .other-item {

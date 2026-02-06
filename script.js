@@ -119,29 +119,78 @@ close_bag.addEventListener('click', () => {
 });
 
 const showBag = (product) => {
-  let bagdiv = document.createElement("div");
-  let list = document.querySelector(".list");
-  bagdiv.classList.add("list-card");
-  bagdiv.innerHTML = `
-     <div class="list-img">
-                                <img src="${product.image}">
-                             </div>
-                             <div class="list-about">
-                                <h4>${product.name}<br><span>${product.price}</span></h4>
-                                 
-                             </div>
-                             <div class="action">
-                                <i class="fa-solid fa-minus"></i>
-                                <h4>1</h4>
-                                <i class="fa-solid fa-plus"></i>
-                             </div>
-  `;
-  list.appendChild(bagdiv);
-}
+  let count = 1;
+  let price = Number(product.price); // ✅ convert once
 
+  const bagdiv = document.createElement("div");
+  const cartList = document.querySelector(".list");
+
+  bagdiv.classList.add("list-card");
+
+  bagdiv.innerHTML = `
+    <div class="list-img">
+      <img src="${product.image}">
+    </div>
+
+    <div class="list-about">
+      <h4>
+        ${product.name}<br>
+        <span class="priceplus">$${price}</span>
+      </h4>
+    </div>
+
+    <div class="action">
+      <i class="fa-solid fa-minus decrement"></i>
+      <h4 class="count">${count}</h4>
+      <i class="fa-solid fa-plus increment"></i>
+    </div>
+  `;
+
+  const totalEl = document.querySelector("#total_price");
+  let total = Number(totalEl.textContent || 0);
+
+  const decrease = bagdiv.querySelector(".decrement");
+  const increase = bagdiv.querySelector(".increment");
+  const countEl = bagdiv.querySelector(".count");
+  const priceEl = bagdiv.querySelector(".priceplus");
+
+  // ✅ add price when item is first added
+  total += price;
+  totalEl.textContent = total;
+
+  increase.addEventListener("click", () => {
+    count++;
+    countEl.textContent = count;
+
+    priceEl.textContent = `$${price * count}`;
+
+    total += price;
+    totalEl.textContent = total;
+  });
+
+  decrease.addEventListener("click", () => {
+    if (count > 1) {
+      count--;
+      countEl.textContent = count;
+
+      priceEl.textContent = `$${price * count}`;
+
+      total -= price;
+      totalEl.textContent = total;
+    } else {
+      total -= price;
+      totalEl.textContent = total;
+      bagdiv.remove();
+    }
+  });
+
+  cartList.appendChild(bagdiv);
+};
+
+let products = [];
 
 const showcard = () => {
-  list.forEach(product => {
+  products.forEach(product => {
     const odercard = document.createElement('div');
     odercard.classList.add("item");
 
@@ -150,34 +199,28 @@ const showcard = () => {
         <img src="${product.image}">
       </div>
       <h4>${product.name}</h4>
-      <h4>${product.price}</h4><br>
+      <h4>$${product.price}</h4>
       <button class="btn add-to-cart">Add to Cart</button>
     `;
 
-    const cartBtn = odercard.querySelector(".add-to-cart");
-
-    cartBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      alert(`Item ${product.name} sucessfully added to the bag`)
-      showBag(product);
-    });
+    odercard.querySelector(".add-to-cart")
+      .addEventListener("click", (e) => {
+        e.preventDefault();
+        alert(`Item ${product.name} successfully added to the bag`);
+        showBag(product);
+      });
 
     menulist.appendChild(odercard);
   });
-};
-
-
-
-let list = [];
-
+}
 
 const initial = () => {
-  fetch('list.json').then
-    (response => response.json()).then
-    (data => {
-      list = data;
+  fetch('list.json')
+    .then(res => res.json())
+    .then(data => {
+      products = data;
       showcard();
     });
-}
+};
 
 initial();
